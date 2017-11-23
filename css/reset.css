@@ -1,0 +1,54 @@
+/* --------------------------------------------------
+  Reset Browser Defaults
+  you can ignore this file; you will not need to edit it.
+  just be sure you understand what it does!
+-------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; 
+}
+
+body {
+  background-color: #FFFFFF; 
+}
+
+  
+
+/* --------------------------------------------------
+  Set some defaults
+-------------------------------------------------- */
+
+*,
+*:before,
+*:after { 
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Clears floated elements */
+.clear:before, 
+.clear:after { content: ' '; display: table; }
+.clear:after { clear: both; }
+.clear { *zoom: 1; }
+
+/* Improve font rendering, especially in Chrome */
+*,
+*:after,
+*:before {
+  -webkit-font-smoothing: antialiased !important;
+  font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering:optimizeLegibility; /* kerning */
+}

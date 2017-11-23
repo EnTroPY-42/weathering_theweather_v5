@@ -1,0 +1,608 @@
+body {
+	background-color: #C6D8EC;
+	overflow: hidden;
+}
+
+/*#content_1 {
+	display: block;
+}
+
+#content_2 {
+	display: none;
+}
+
+
+@media screen and (min-width: 480px) {
+	
+	body {
+		background-color: lightgreen;
+	}
+
+	#content_1 {
+		display: none;
+	}
+
+	#content_2 {
+		display: block;
+	}
+
+}*/
+
+/*#txt_temp{
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	width: 400px;
+	height: 200px;
+	font-size: 20px;
+	text-align: center;
+	color: black;
+	background-color: lightgrey;
+}*/
+
+#words{
+	font-family: sans-serif;
+	font-size: 50px;
+	position: absolute;
+	color: white;
+	top: 200px;
+	left: 300px;
+}
+
+#txtDiv{
+	font-family: sans-serif;
+	font-size: 30px;
+	position: absolute;
+	color: white;
+	top: 50px;
+	left: 30px;
+	display: none;
+}
+
+#timeDiv{
+	font-family: sans-serif;
+	font-size: 30px;
+	position: absolute;
+	color: white;
+	top: 100px;
+	left: 30px;
+	display: none;
+}
+
+
+
+
+
+
+#two{
+	width: 100%;
+	height: 100%;
+	background: #DAEFF1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+audio{
+	display: none;
+}
+
+
+.changing_state{
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	background: lightblue;
+	left: 0px;
+	top: 500px;
+}
+
+.waves{
+	width: 100%;
+	position: absolute;
+	top: 500px;
+	left: 0px;
+	z-index: 10;
+	display: none;
+	-webkit-animation-name: example8; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example8;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example8 {
+    0%   {left:0px; top:500px;}
+    25%  {left:100px; top:400px;}
+    50%  {left:400px; top:500px;}
+    75%  {left:100px; top:400px;}
+    100% {left:0px; top:500px;}
+}
+
+/* Standard syntax */
+@keyframes example8 {
+    0%   {left:0px; top:500px;}
+    25%  {left:100px; top:400px;}
+    50%  {left:400px; top:500px;}
+    75%  {left:100px; top:400px;}
+    100% {left:0px; top:500px;}
+}
+
+.home{
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	background: #0957C3;
+	left: 0px;
+	top: 500px;
+}
+
+.hometwo{
+	width: 100%;
+	height: 400px;
+	position: absolute;
+	background: #71C5EA;
+	left: 0px;
+	top: 500px;
+	display: none;
+}
+
+.changing_sun{
+	width: 100px;
+	height: 100px;
+	background: yellow;
+	position: absolute;
+	top: 50px;
+	left: 900px;
+	display: none;
+
+}
+
+.sun{
+	width: 100px;
+	height: 100px;
+	background: #FFD94A;
+	position: absolute;
+	top: 50px;
+	left: 900px;
+	display: none;
+
+}
+
+
+
+
+
+#clouds{
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	background: white;
+	position: absolute;
+	left: 900px;
+	display: none;
+	z-index: 1;
+}
+
+#cloudstwo{
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	background: white;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	display: none;
+	z-index: 2;
+}
+
+#cloudsthree{
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	background: white;
+	position: absolute;
+	left: 300px;
+	top: 300px;
+	z-index: 3;
+}
+
+#windclouds{
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	background: white;
+	position: absolute;
+	left: 900px;
+	-webkit-animation-name: example9; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example9;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+	display: none;
+	z-index: 1;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example9 {
+    0%   {left:900px;}
+    25%  {left:700px;}
+    50%  {left:900px;}
+    75%  {left:700px;}
+    100% {left:900px;}
+}
+
+/* Standard syntax */
+@keyframes example9 {
+  	0%   {left:900px;}
+    25%  {left:700px;}
+    50%  {left:900px;}
+    75%  {left:700px;}
+    100% {left:900px;}
+}
+
+
+#windcloudstwo{
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	background: white;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	display: none;
+	z-index: 2;
+	-webkit-animation-name: example10; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example10;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example10 {
+    0%   {left:100px;}
+    25%  {left:25px;}
+    50%  {left:100px;}
+    75%  {left:25px;}
+    100% {left:100px;}
+}
+
+/* Standard syntax */
+@keyframes example10 {
+  	0%   {left:100px;}
+    25%  {left:25px;}
+    50%  {left:100px;}
+    75%  {left:25px;}
+    100% {left:100px;}
+}
+
+#windcloudsthree{
+	width: 300px;
+	height: 100px;
+	border-radius: 50px;
+	background: white;
+	position: absolute;
+	left: 300px;
+	top: 300px;
+	display: none;
+	z-index: 3;
+	-webkit-animation-name: example11; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example11;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example11 {
+    0%   {left:300px;}
+    25%  {left:100px;}
+    50%  {left:300px;}
+    75%  {left:100px;}
+    100% {left:300px;}
+}
+
+/* Standard syntax */
+@keyframes example11 {
+ 	0%   {left:300px;}
+    25%  {left:100px;}
+    50%  {left:300px;}
+    75%  {left:100px;}
+    100% {left:300px;}
+}
+}
+
+
+#happyclyde{
+	width: 600px;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	display: none;
+}
+
+#windclyde{
+	width: 600px;
+	position: absolute;
+	top: 200px;
+	left: 400px;
+	display: none;
+	-webkit-animation-name: example4; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: example4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    z-index: 20;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example4 {
+    0%   {left:400px; top:200px;}
+    25%  {left:300px; top:100px;}
+    50%  {left:200px; top:100px;}
+    75%  {left:100px; top:50px;}
+    100% {left:50px; top:25px;}
+}
+
+/* Standard syntax */
+@keyframes example4 {
+    0%   {left:400px; top:200px;}
+    25%  {left:300px; top:100px;}
+    50%  {left:200px; top:100px;}
+    75%  {left:100px; top:50px;}
+    100% {left:50px; top:25px;}
+}
+
+/*These are the different fishes that appear depending on the weather condition.*/
+
+#hotfishy{
+	width: 200px;
+	position: absolute;
+	top: 600px;
+	left: 100px;
+	-webkit-animation-name: example3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: example3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    display: none;
+	
+}
+
+#coldfishy{
+	width: 200px;
+	position: absolute;
+	top: 600px;
+	left: 100px;
+	display: none;
+	
+}
+
+#windyfishy{
+	width: 200px;
+	position: absolute;
+	top: 600px;
+	left: 900px;
+	display: none;
+	-webkit-animation-name: example5; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: example5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    display: none;
+	
+}
+
+#rainyfishy{
+	width: 50%;
+	max-height: 50px;
+	position: absolute;
+	top: 500px;
+    -webkit-animation-name: example6; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: example6;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+	display: none;
+	animation-direction: linear reverse;
+	
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example6 {
+  from {left: 100%;}
+  to {left: 0%;}
+}
+
+/* Standard syntax */
+@keyframes example5 {
+from {left: 100%;}
+  to {left: 0%;}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example5 {
+    0%   {left:900px;}
+    25%  {left:800px;}
+    50%  {left:700px;}
+    75%  {left:600px;}
+    100% {left:300px;}
+}
+
+/* Standard syntax */
+@keyframes example5 {
+  	0%   {left:900px;}
+    25%  {left:800px;}
+    50%  {left:700px;}
+    75%  {left:600px;}
+    100% {left:300px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example3 {
+    0%   {left:100px;}
+    25%  {left:500px;}
+    50%  {left:900px;}
+    75%  {left:1500px;}
+    100% {left:100px;}
+}
+
+/* Standard syntax */
+@keyframes example3 {
+    0%   {left:100px;}
+    25%  {left:500px;}
+    50%  {left:900px;}
+    75%  {left:1500px;}
+    100% {left:100px;}
+}
+
+#warmclyde{
+	width: 600px;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	display: none;
+	-webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: example2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+    0%   {top: 200px; left:200px;}
+    25%  {top: 300px; left:300px;}
+    50%  {top: 200px; left:400px;}
+    75%  {top: 300px; left:500px;}
+    100% {top: 200px; left:200px;}
+}
+
+/* Standard syntax */
+@keyframes example2 {
+  	0%   {top: 200px; left:200px;}
+    25%  {top: 300px; left:300px;}
+    50%  {top: 200px; left:400px;}
+    75%  {top: 300px; left:500px;}
+    100% {top: 200px; left:200px;}
+}
+
+
+
+/*Clyde turns into a dragon and can breathe fire because he's awesome.*/
+#hotclyde{
+	width: 600px;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	display: none;
+}
+
+#fire{
+	width: 50px;
+	position: absolute;
+	top: 480px;
+	left: 750px;
+	display: none;
+	-webkit-animation-name: example7; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    animation-name: example7;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example7 {
+    0%   {left:750px;}
+    100%  {left:1500px;}
+
+}
+
+/* Standard syntax */
+@keyframes example7 {
+    0%   {left:750px;}
+    100%  {left:1500px;}
+}
+
+
+
+
+#coldclyde{
+	width: 600px;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	display: none;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    z-index: 5;
+}
+
+/*Clyde dances to stay warm.*/
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {left:100px;}
+    25%  {left:300px;}
+    50%  {left:100px;}
+    75%  {left:300px;}
+    100% {left:100px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {left:100px;}
+    25%  {left:300px;}
+    50%  {left:100px;}
+    75%  {left:300px;}
+    100% {left:100px;}
+}
+
+
+
+#rainman{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+#snow{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	
+	
+}
+
+
+
+#emptyImg{
+	position: absolute;
+	left: 200px;
+	
+}
+
+
+
+
+
